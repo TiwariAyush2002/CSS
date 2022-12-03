@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./images/pattern-background-desktop.svg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 16rem;
+    border: 1px solid black transparent;
+    border-radius: 10px;
+}
+
+.box-1 img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-2 {
+    padding: 10px;
+}
+
+.content {
+    padding-bottom: 30px;
+}
+
+.box-2 .content h2 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 23px;
+    color: hsl(223, 47%, 23%);
+}
+
+.box-2 .content p {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.annual {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: hsl(225, 100%, 98%);
+    padding-bottom: 15px;
+}
+.annual .link:focus{
+    outline: none;
+
+}
+
+.annual .link {
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.plan h6 {
+    color: hsl(224, 23%, 55%);
+    text-align: left;
+}
+
+.price .btn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 4px 2px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.price .btn-2 {
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(224, 23%, 55%);
+    padding: 4px 2px;
+    border-style: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    font-weight: 6700;
+}
+
+@media (max-width:375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 20rem;
+        border: 1px solid black transparent;
+        border-radius: 25px;
+
+    }
+
+    .price .btn {
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        padding: 15px 1px;
+        border-style: none;
+        border-radius: 7px;
+    }
+
+    .annual {
+        padding-bottom: 30px;
+    }
+        .box-1 img {
+            width: 100%;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+}
