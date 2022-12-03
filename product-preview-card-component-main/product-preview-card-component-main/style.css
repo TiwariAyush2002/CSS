@@ -1,0 +1,230 @@
+/*.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+/*'Montserrat',sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    border: 1px solid black transparent;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.part-1 {
+    height: 100%;
+    width: 100%;
+}
+
+.part-1 img {
+    width: 100%;
+    height: 100%;
+    background-size: no-repeat center center/cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.part-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.content p {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.content h4 {
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    padding-bottom: 15px;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+}
+
+.content h2 {
+    line-height: 1;
+    font-size: 23px;
+    color: hsl(212, 21%, 14%);
+}
+
+.price {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.price p {
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    position: relative;
+
+}
+
+.price p::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(228, 12%, 48%);
+    top: 50%;
+}
+
+.price h2 {
+    color: hsl(158, 36%, 37%);
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    border-style: none;
+    border: 1px solid white transparent;
+    border-radius: 5px;
+    color: white;
+    font-size: 8px;
+    padding: 10px 5px;
+}
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width:375px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: hsl(30, 38%, 92%);
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'fraunces', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        border: 1px solid black transparent;
+        border-radius: 10px;
+        margin: 3rem;
+    }
+
+    .part-1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .part-1 img {
+        width: 100%;
+        height: 16rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        object-fit: cover;
+
+    }
+
+    .part-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    .content h2 {
+        line-height: 1;
+        font-size: 30px;
+        color: hsl(212, 21%, 14%);
+        font-family: 'fraunces', sans-serif;
+    }
+
+    .part-2 .content h4 {
+        color: hsl(228, 12%, 48%);
+        font-size: 14px;
+        padding-bottom: 20px;
+        letter-spacing: 0.4rem;
+        font-weight: 100;
+    }
+
+    .content p {
+        color: hsl(228, 12%, 48%);
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: 100;
+    }
+        .price {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+    .price h2 {
+        color: hsl(158, 36%, 37%);
+        font-size: 30px;
+    }
+
+    .price p {
+        color: hsl(228, 12%, 48%);
+        font-size: 15px;
+
+    }
+        .btn {
+            background-color: hsl(158, 36%, 37%);
+            border-style: none;
+            border: 1px solid white transparent;
+            border-radius: 7px;
+            color: white;
+            font-size: 15px;
+            padding: 13px 1px;
+
+}
+}
